@@ -1,0 +1,62 @@
+/* ===== 全局设计 Token ===== */
+:root {
+  --brand: #2b7de9;
+  /* 主蓝色 */
+  --brand-dark: #1a63c5;
+  --brand-light: #ebf3ff;
+  --navy: #1e3a5f;
+  --navy-dark: #1a202c;
+  --bg: #f4f7fb;
+  /* 浅灰蓝背景 */
+  --bg2: #eef2f8;
+  --surface: #ffffff;
+  --border: #dde4ef;
+  --text: #1e2d3d;
+  --muted: #64748b;
+  --danger: #dc2626;
+  --danger-light: #fff5f5;
+  --success: #16a34a;
+  --success-light: #f0fdf4;
+  --warning: #d97706;
+  --nav-h: 64px;
+  --radius: 14px;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Reset ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Inter', 'Helvetica Neue', Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--brand);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+}

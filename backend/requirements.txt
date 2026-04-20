@@ -1,0 +1,15 @@
+# 智能停车场后端依赖包
+
+# Web框架
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+websockets==12.0
+python-multipart==0.0.6
+
+# 数据库
+pymysql==1.1.0
+cryptography==41.0.7
+
+# 其他
+pydantic==2.5.0
+python-dotenv==1.0.0
