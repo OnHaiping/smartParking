@@ -31,6 +31,7 @@ import re
 from queue import Queue, Empty
 from concurrent.futures import ThreadPoolExecutor
 
+
 # 强制将当前工作目录切换到 backend 文件夹所在目录
 # 解决 Paddle C++ 底层遇到中文绝对路径导致无法读取模型的问题
 os.chdir(os.path.dirname(os.path.abspath(__file__)))

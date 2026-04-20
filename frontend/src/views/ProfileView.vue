@@ -125,8 +125,8 @@ const avatarChar = computed(() => {
 
 const fullAvatarUrl = computed(() => {
   if (!userInfo.value.avatar_url) return ''
-  // 假设后端运行在 localhost:8000
-  const baseUrl = api.defaults.baseURL ? api.defaults.baseURL.replace('/api', '') : 'http://localhost:8000'
+  // 后端运行在 192.168.137.1:8080
+  const baseUrl = 'http://192.168.137.1:8080'
   return userInfo.value.avatar_url.startsWith('http') ? userInfo.value.avatar_url : baseUrl + userInfo.value.avatar_url
 })
 
